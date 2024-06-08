@@ -20,7 +20,7 @@ public class UserService { // auto-writing / Data Access Object
         return repository.save(user); // repository 함수가 다 자동으로 해줌
     }
 
-    public List<User > getAllUsers(){
+    public List<User> getAllUsers(){
         List<User> users=new ArrayList<>();
         Streamable.of(repository.findAll()).
                 forEach(users::add);

@@ -13,6 +13,7 @@ public class UserDTO {
     private String id; // 이게 id
     private String password;
     private String email;
+    private String name;
     private String loginMessage;
 
     public String getLoginMessage() {
@@ -27,6 +28,7 @@ public class UserDTO {
         userDTO.setId(user.getId());
         userDTO.setPassword(user.getPassword());
         userDTO.setEmail(user.getEmail());
+        userDTO.setName(user.getName());
         return userDTO;
     }
 }
